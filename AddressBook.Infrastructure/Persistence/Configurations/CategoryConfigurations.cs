@@ -18,14 +18,16 @@ public class CategoryConfigurations : IEntityTypeConfiguration<Category>
         builder.HasKey(x => x.Id);
 
         builder.Property(x => x.Id)
-            .ValueGeneratedNever()
-            .IsRequired();
+            .IsRequired()
+            .ValueGeneratedOnAdd();
 
         builder.Property(x => x.Name)
             .HasMaxLength(50)
             .IsRequired();
 
-        builder.Property(x => x.SubCategory)
-            .HasMaxLength(50);
+        builder.HasMany(x => x.SubCategories)
+            .WithOne(x => x.Category)
+            .HasForeignKey(x => x.CategoryId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }

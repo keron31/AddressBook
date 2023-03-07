@@ -64,3 +64,6 @@ C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Api\bin\Debug\net6.0
 C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Api\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Api\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Api\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
