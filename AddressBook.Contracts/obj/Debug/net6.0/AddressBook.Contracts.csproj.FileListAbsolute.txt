@@ -1,0 +1,12 @@
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\bin\Debug\net6.0\AddressBook.Contracts.deps.json
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\bin\Debug\net6.0\AddressBook.Contracts.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\bin\Debug\net6.0\AddressBook.Contracts.pdb
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\AddressBook.Contracts.csproj.AssemblyReference.cache
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\AddressBook.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\AddressBook.Contracts.AssemblyInfoInputs.cache
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\AddressBook.Contracts.AssemblyInfo.cs
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\AddressBook.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\AddressBook.Contracts.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\refint\AddressBook.Contracts.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\AddressBook.Contracts.pdb
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Contracts\obj\Debug\net6.0\ref\AddressBook.Contracts.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DCBwHjn1sbBBaGIVCfI4ETdrTfeuYvgwcR7kFnfKdWu3D2saopiYY0t8tQMB1BvN5h9xeSIa5pOea1F9A/yr0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Norbert\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,17 @@
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\bin\Debug\net6.0\AddressBook.Infrastructure.deps.json
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\bin\Debug\net6.0\AddressBook.Infrastructure.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\bin\Debug\net6.0\AddressBook.Infrastructure.pdb
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\AddressBook.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\AddressBook.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\AddressBook.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\AddressBook.Infrastructure.AssemblyInfo.cs
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\AddressBook.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\AddressBook.Infrastructure.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\refint\AddressBook.Infrastructure.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\AddressBook.Infrastructure.pdb
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\ref\AddressBook.Infrastructure.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\bin\Debug\net6.0\AddressBook.Application.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\bin\Debug\net6.0\AddressBook.Domain.dll
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\bin\Debug\net6.0\AddressBook.Application.pdb
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\bin\Debug\net6.0\AddressBook.Domain.pdb
+C:\Users\Norbert\Desktop\Rekrutacja\AddressBook\AddressBook.Infrastructure\obj\Debug\net6.0\AddressBook.Infrastructure.csproj.CopyComplete
