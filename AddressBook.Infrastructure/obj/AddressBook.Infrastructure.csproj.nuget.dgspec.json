@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj": {}
+    "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj": {
+    "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj",
+        "projectUniqueName": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj",
         "projectName": "AddressBook.Application",
-        "projectPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj",
+        "projectPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj",
         "packagesPath": "C:\\Users\\Norbert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\obj\\",
+        "outputPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {
-                "projectPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj"
+              "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {
+                "projectPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {
+    "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
         "projectName": "AddressBook.Domain",
-        "projectPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
+        "projectPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\AddressBook.Domain.csproj",
         "packagesPath": "C:\\Users\\Norbert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\obj\\",
+        "outputPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -134,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj": {
+    "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj",
         "projectName": "AddressBook.Infrastructure",
-        "projectPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj",
+        "projectPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Norbert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -163,8 +163,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj": {
-                "projectPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj"
+              "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj": {
+                "projectPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj"
               }
             }
           }

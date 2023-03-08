@@ -30,7 +30,7 @@ public class CategoryRepository : ICategoryRepository
 
     public async Task AddDefaultCategoryAsync()
     {
-        // jeśli nie ma domyślnych kategorii, to dodaj je
+        // if there are no default categories then add them
         if (!_dbContext.Categories.Any())
         {
             var defaultCategories = new List<Category>();

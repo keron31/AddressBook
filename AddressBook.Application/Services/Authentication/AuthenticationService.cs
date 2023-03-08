@@ -8,18 +8,20 @@ public class AuthenticationService : IAuthenticationService
 {
     private readonly IJwtTokenGenerator _jwtTokenGenerator;
     private readonly IUserRepository _userRepository;
+    private readonly IHashHelper _hashHelper;
 
-    public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository)
+    public AuthenticationService(IJwtTokenGenerator jwtTokenGenerator, IUserRepository userRepository, IHashHelper hashHelper)
     {
         _jwtTokenGenerator = jwtTokenGenerator;
         _userRepository = userRepository;
+        _hashHelper = hashHelper;
     }
 
-    public AuthenticationResult Register(string firstName, string lastName, string email, string password)
+    public async Task<AuthenticationResult> Register(string firstName, string lastName, string email, string password)
     {
-        if (_userRepository.GetUserByEmail(email) != null)
+        if (_userRepository.GetUserByEmail(email) is not null)
         {
-            throw new Exception("User with this email already exists");
+            throw new Exception("Email already in use");
         }
 
         var user = new User
@@ -27,33 +29,52 @@ public class AuthenticationService : IAuthenticationService
             FirstName = firstName,
             LastName = lastName,
             Email = email,
-            Password = password
+            Password = _hashHelper.HashPassword(password)
         };
 
-        _userRepository.AddUser(user);
+        // Create JWT token
+        var accessToken = _jwtTokenGenerator.GenerateAccessToken(user);
 
-        var token = _jwtTokenGenerator.GenerateToken(user);
+        // Create refresh token
+        var (refreshToken, refreshTokenExpiryDays) = _jwtTokenGenerator.GenerateRefreshToken();
+
+        user.RefreshToken = refreshToken;
+        user.RefreshTokenExpiryDate = refreshTokenExpiryDays;
+
+        await _userRepository.AddUserAsync(user);
 
         return new AuthenticationResult(
             user,
-            token);
+            accessToken,
+            refreshToken);
     }
 
-    public AuthenticationResult Login(string email, string password)
+    public async Task<AuthenticationResult> Login(string email, string password)
     {
         if (_userRepository.GetUserByEmail(email) is not User user)
         {
             throw new Exception("Invalid credentials");
         }
 
-        if (user.Password != password)
+        if (!_hashHelper.VerifyPassword(password, user.Password))
         {
             throw new Exception("Invalid credentials");
         }
 
-        var token = _jwtTokenGenerator.GenerateToken(user);
+        // Create JWT token
+        var accessToken = _jwtTokenGenerator.GenerateAccessToken(user);
+
+        // Create refresh token
+        var (refreshToken, refreshTokenExpiryDays) = _jwtTokenGenerator.GenerateRefreshToken();
+
+        user.RefreshToken = refreshToken;
+        user.RefreshTokenExpiryDate = refreshTokenExpiryDays;
+
+        await _userRepository.UpdateUserAsync(user);
+
         return new AuthenticationResult(
             user,
-            token);
+            accessToken,
+            refreshToken);
     }
 }

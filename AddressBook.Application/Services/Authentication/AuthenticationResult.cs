@@ -4,4 +4,6 @@ namespace AddressBook.Application.Services.Authentication;
 
 public record AuthenticationResult(
     User User,
-    string Token);
+    string AccessToken,
+    string RefreshToken
+);

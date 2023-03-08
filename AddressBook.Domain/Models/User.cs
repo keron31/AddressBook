@@ -7,4 +7,6 @@ public class User
     public string LastName { get; set; } = null!;
     public string Email { get; set; } = null!;
     public string Password { get; set; } = null!;
+    public string? RefreshToken { get; set; }
+    public DateTime? RefreshTokenExpiryDate { get; set; }
 }

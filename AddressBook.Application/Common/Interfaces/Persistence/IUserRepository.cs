@@ -5,5 +5,6 @@ namespace AddressBook.Application.Common.Interfaces.Persistence;
 public interface IUserRepository
 {
     User? GetUserByEmail(string email);
-    void AddUser(User user);
+    Task<User> AddUserAsync(User user);
+    Task<User> UpdateUserAsync(User user);
 }

@@ -54,10 +54,13 @@ public static class DependencyInjection
 
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<ICategoryRepository, CategoryRepository>();
-
-        // jeśli nie ma domyślnych kategorii, wywołaj metodę AddDefaultCategoryAsync
+        services.AddScoped<IContactRepository, ContactRepository>();
+        // if connection to database is successful, call the AddDefaultCategoryAsync method to add default categories if they don't exist
         using var scope = services.BuildServiceProvider().CreateScope();
-        var categoryRepository = scope.ServiceProvider.GetRequiredService<ICategoryRepository>();
+        var scopedServices = scope.ServiceProvider;
+        var dbContext = scopedServices.GetRequiredService<AddressBookDbContext>();
+        dbContext.Database.Migrate();
+        var categoryRepository = scopedServices.GetRequiredService<ICategoryRepository>();
         categoryRepository.AddDefaultCategoryAsync().Wait();
 
 
@@ -73,6 +76,7 @@ public static class DependencyInjection
 
         services.AddSingleton(Options.Create(jwtSettings));
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddSingleton<IHashHelper, HashHelper>();
 
         services.AddAuthentication(defaultScheme: JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters

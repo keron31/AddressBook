@@ -14,8 +14,8 @@ var app = builder.Build();
 {
     app.UseCors("AllowLocalhost");
     app.UseHttpsRedirection();
-    app.UseAuthorization();
     app.UseAuthentication();
+    app.UseAuthorization();
     app.MapControllers();
     app.Run();
 }

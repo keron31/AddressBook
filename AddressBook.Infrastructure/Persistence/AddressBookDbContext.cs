@@ -16,5 +16,7 @@ public class AddressBookDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AddressBookDbContext).Assembly);
+
+        base.OnModelCreating(modelBuilder);
     }
 }

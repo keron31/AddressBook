@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dyuDElyV9COmmIObi6QnSx1S/txZVNLzb5cXuoRxoR0IWXzBouCJCdb2CRkdQa63MqMtlm/fRiq2/cjZr4kDVw==",
+  "dgSpecHash": "oewjLaApezeK48q3w+AdXyhky6lc6/OF/erCFc8z8Iq8rn+HkfKuS5C557SUQG44H9Zi6dxsvXgPU/sRrMGOKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj",
+  "projectFilePath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Infrastructure\\AddressBook.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Norbert\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.8\\microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",
     "C:\\Users\\Norbert\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

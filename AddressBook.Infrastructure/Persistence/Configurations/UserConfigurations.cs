@@ -36,5 +36,9 @@ public class UserConfigurations : IEntityTypeConfiguration<User>
         builder.Property(x => x.Password)
             .HasMaxLength(50)
             .IsRequired();
+
+        builder.Property(x => x.RefreshToken);
+
+        builder.Property(x => x.RefreshTokenExpiryDate);
     }
 }
