@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj": {}
+    "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj": {
+    "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj",
         "projectName": "AddressBook.Contracts",
-        "projectPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj",
+        "projectPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\AddressBook.Contracts.csproj",
         "packagesPath": "C:\\Users\\Norbert\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

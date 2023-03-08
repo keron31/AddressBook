@@ -1,5 +1,6 @@
 using AddressBook.Application.Common.Interfaces.Persistence;
 using AddressBook.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AddressBook.Infrastructure.Persistence.Repositories;
 
@@ -8,7 +9,7 @@ public class CategoryRepository : ICategoryRepository
     private readonly AddressBookDbContext _dbContext;
     private readonly List<string> DefaultCategoryNames = new List<string>
     {
-        "Praca",
+        "Służbowy",
         "Prywatny",
         "Inny"
     };
@@ -40,7 +41,7 @@ public class CategoryRepository : ICategoryRepository
                 {
                     Name = categoryName
                 };
-                if (categoryName == "Praca")
+                if (categoryName == "Służbowy")
                 {
                     var subCategories = new List<SubCategory>();
                     foreach (var subCategoryName in DefaultSubCategoryNames_1)
@@ -57,5 +58,15 @@ public class CategoryRepository : ICategoryRepository
             await _dbContext.Categories.AddRangeAsync(defaultCategories);
             await _dbContext.SaveChangesAsync();
         }
+    }
+
+    public async Task<List<Category>> GetCategoriesAsync()
+    {
+        return await _dbContext.Categories.ToListAsync();
+    }
+
+    public async Task<List<SubCategory>> GetSubCategoriesAsync()
+    {
+        return await _dbContext.SubCategories.ToListAsync();
     }
 }

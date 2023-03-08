@@ -21,7 +21,7 @@ public class ContactController : ControllerBase
     }
 
     [HttpPost("create")]
-    public async Task<IActionResult> CreateContact(CreateContactRequest request)
+    public async Task<IActionResult> CreateContact(CreateOrUpdateContactRequest request)
     {
         var result = await _contactService.CreateContact(request.FirstName,
             request.LastName,
@@ -37,6 +37,7 @@ public class ContactController : ControllerBase
             result.Contact.FirstName,
             result.Contact.LastName,
             result.Contact.Email,
+            result.Contact.Password,
             result.Contact.Category,
             result.Contact.SubCategory,
             result.Contact.Phone,
@@ -47,16 +48,21 @@ public class ContactController : ControllerBase
     }
 
     [HttpGet("get-all")]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAllContacts()
     {
         var result = await _contactRepository.GetContactsAsync();
 
-        var response = new ContactsResponse(result.Select(contact => new ContactResponse(
-            contact.Id,
-            contact.FirstName,
-            contact.LastName,
-            contact.Email
-        )));
+        var response = new List<ContactsResponse>();
+        foreach (var contact in result)
+        {
+            response.Add(new ContactsResponse(
+                contact.Id,
+                contact.FirstName,
+                contact.LastName,
+                contact.Email
+            ));
+        }
 
         return Ok(response);
     }
@@ -71,6 +77,7 @@ public class ContactController : ControllerBase
             result.FirstName,
             result.LastName,
             result.Email,
+            result.Password,
             result.Category,
             result.SubCategory,
             result.Phone,
@@ -87,6 +94,25 @@ public class ContactController : ControllerBase
 
         await _contactRepository.DeleteContactAsync(result);
 
-        return Ok();
+        return Ok(true);
+    }
+
+    [HttpPut("update/{id}")]
+    public async Task<IActionResult> UpdateContact(string id, CreateOrUpdateContactRequest request)
+    {
+        var result = await _contactRepository.GetContactByIdAsync(Guid.Parse(id));
+
+        result.FirstName = request.FirstName;
+        result.LastName = request.LastName;
+        result.Email = request.Email;
+        result.Category = request.Category;
+        result.Password = request.Password;
+        result.SubCategory = request.SubCategory;
+        result.Phone = request.Phone;
+        result.DateOfBirth = request.DateOfBirth;
+
+        await _contactRepository.UpdateContactAsync(result);
+
+        return Ok(true);
     }
 }

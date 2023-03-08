@@ -1,6 +1,6 @@
 namespace AddressBook.Contracts.Contact;
 
-public record CreateContactRequest(
+public record CreateOrUpdateContactRequest(
     string FirstName,
     string LastName,
     string Email,

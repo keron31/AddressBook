@@ -1,6 +1,7 @@
 
 using AddressBook.Application.Services.Authentication;
 using AddressBook.Contracts.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AddressBook.Api.Controllers;
@@ -55,5 +56,33 @@ public class AuthenticationController : ControllerBase
         );
 
         return Ok(response);
+    }
+
+    [HttpPost("refresh-token")]
+    public async Task<IActionResult> RefreshToken(RefreshTokenOrLogoutRequest request)
+    {
+        var authResult = await _authenticationService.RefreshToken(
+            request.AccessToken,
+            request.RefreshToken);
+
+        var response = new AuthenticationResponse(
+            authResult.User.Id,
+            authResult.User.FirstName,
+            authResult.User.LastName,
+            authResult.User.Email,
+            authResult.AccessToken,
+            authResult.RefreshToken
+        );
+
+        return Ok(response);
+    }
+
+    [HttpPost("logout")]
+    [Authorize]
+    public async Task<IActionResult> Logout(RefreshTokenOrLogoutRequest request)
+    {
+        await _authenticationService.Logout(request.AccessToken, request.RefreshToken);
+
+        return Ok(true);
     }
 }

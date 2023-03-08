@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tvpNWKC2K+beB3c0se6CghnMKnC4JlQ0WRGoWfTRucTiWBIAvU7mqJzQF/vbs5zbiAo3wHwcLKUgYOiTGBzm7Q==",
+  "dgSpecHash": "OTXD7DC5T1GEmZAUuWHhB0s7/g4FPl/+e+bfd5XE0MWAmcE0Y7qQPqd3pJsf+p4zeCyJtPlGsDgfO4ysHarNKw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj",
+  "projectFilePath": "C:\\Users\\Norbert\\Desktop\\Rekrutacja\\AddressBook\\AddressBook.Application\\AddressBook.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Norbert\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],

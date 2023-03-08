@@ -41,7 +41,7 @@ public class ContactRepository : IContactRepository
         return await _dbContext.Contacts.FirstOrDefaultAsync(c => c.Id == id);
     }
 
-    public async Task<IEnumerable<Contact>> GetContactsAsync()
+    public async Task<List<Contact>> GetContactsAsync()
     {
         return await _dbContext.Contacts.ToListAsync();
 
